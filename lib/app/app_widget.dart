@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:asuka/asuka.dart' as asuka;
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:jrdistribuidora/app/core/ui/ui_config.dart';
 
 class AppWidget extends StatelessWidget {
   const AppWidget({Key? key}) : super(key: key);
@@ -16,9 +17,9 @@ class AppWidget extends StatelessWidget {
         builder: (_, __) {
           return MaterialApp.router(
             debugShowCheckedModeBanner: false,
-            title: 'Jr Distribuidora',
+            title: UiConfig.title,
             builder: asuka.Asuka.builder,
-            theme: ThemeData(primarySwatch: Colors.blue),
+            theme: UiConfig.theme,
             routeInformationParser: Modular.routeInformationParser,
             routerDelegate: Modular.routerDelegate,
           );
