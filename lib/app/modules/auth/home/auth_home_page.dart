@@ -6,11 +6,12 @@ class AuthHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color(0xff1C235E),
         body: Center(
       child: Image.asset(
-        'assets/imagens/',
-        width: 130,
-        height: 162,
+        'assets/images/logo.png',
+        width: 200,
+        height: 200,
         fit: BoxFit.contain,
       ),
     ));

@@ -15,6 +15,7 @@ class AppWidget extends StatelessWidget {
         designSize: const Size(390, 844),
         builder: (_, __) {
           return MaterialApp.router(
+            debugShowCheckedModeBanner: false,
             title: 'Jr Distribuidora',
             builder: asuka.Asuka.builder,
             theme: ThemeData(primarySwatch: Colors.blue),
