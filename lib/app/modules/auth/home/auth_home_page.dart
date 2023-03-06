@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:jrdistribuidora/core/ui/extensions/size_screen_extension.dart';
 
 class AuthHomePage extends StatelessWidget {
   const AuthHomePage({Key? key}) : super(key: key);
@@ -10,8 +11,8 @@ class AuthHomePage extends StatelessWidget {
         body: Center(
       child: Image.asset(
         'assets/images/logo.png',
-        width: 200,
-        height: 200,
+        width: 200.w,
+        height: 200.h,
         fit: BoxFit.contain,
       ),
     ));
